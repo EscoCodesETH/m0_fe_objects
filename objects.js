@@ -8,25 +8,34 @@
 var foods = {
   apples: 23, 
   grapes: 507, 
-  eggs: 48
+  eggs: 48,
+  kiwi:["red","green","yellow"]
 }
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log (foods)
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
 
+console.log(Object.values(foods))
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(foods.grapes)
+
+console.log(Object.values(foods)[1])
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
-
+foods.cherry  = 3;
+foods.kiwi.push('japanese')
+console.log(Object.keys(foods));
+console.log(foods.kiwi)
 
 // -------------------
 // Part 2: Email
@@ -40,15 +49,25 @@ var foods = {
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 // Write code that logs your email object to the terminal.
+let mail = {
+  sender: 'google recruiter',
+  to:'me',
+  subject:'swe application',
+  cc:'ceo',
+  body:'you been selected'
 
+}
+console.log(mail);
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.keys(mail));
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
+
+console.log(Object.values(mail))
 
 
 // -------------------
@@ -99,3 +118,32 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+let emails = [
+  {
+    sender: 'google recruiter',
+    to:'me',
+    subject:'swe application',
+    cc:'ceo',
+    body:'you been selected'
+
+  },
+  {
+  sender: 'Tesla recruiter',
+  to:'me',
+  subject:'swe application',
+  cc:'ceo',
+  body:'you been selected'
+
+  },
+  {
+    sender: 'META recruiter',
+  to:'me',
+  subject:'swe application',
+  cc:'ceo',
+  body:'you been selected'
+  }
+];
+console.log(emails)
+
+
